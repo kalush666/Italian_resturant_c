@@ -1,0 +1,3 @@
+C:/Users/jonat/Desktop/ORT/algoritmics_data_structures/Italian_resturant/cmake-build-debug/CMakeFiles/Italian_resturant.dir
+C:/Users/jonat/Desktop/ORT/algoritmics_data_structures/Italian_resturant/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jonat/Desktop/ORT/algoritmics_data_structures/Italian_resturant/cmake-build-debug/CMakeFiles/rebuild_cache.dir
