@@ -2,8 +2,18 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+void *mem_copy(char *firststring, const char *secondstring, size_t len) {
+    char *d = (char *)firststring;
+    const char *s = (const char *)secondstring;
+    size_t i;
 
-void copy_string(char **firststring, char *secondString) {
+    for (i = 0; i < len; i++) *(d + i) = *(s + i);
+
+
+    return firststring;
+}
+
+void copy_string(char **firststring, const char *secondString) {
     size_t len = 0;
     while (secondString[len] != '\0') len++;
 
@@ -13,8 +23,10 @@ void copy_string(char **firststring, char *secondString) {
         exit(1);
     }
 
-    memcpy(*firststring, secondString, len + 1);
+    mem_copy(*firststring, secondString, len + 1);
 }
+
+
 
 
 char **add_guest(char **arrAllGuests, int *ion_guest_counter, char *szName) {
