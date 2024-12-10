@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-void *mem_copy(char *firststring, const char *secondstring, size_t len) {
+char *mem_copy(char *firststring, const char *secondstring, size_t len) {
     char *d = (char *)firststring;
     const char *s = (const char *)secondstring;
     size_t i;
