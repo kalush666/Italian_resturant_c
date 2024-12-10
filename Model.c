@@ -15,7 +15,7 @@ void *mem_copy(char *firststring, const char *secondstring, size_t len) {
 
 void copy_string(char **firststring, const char *secondString) {
     size_t len = 0;
-    while (secondString[len] != '\0') len++;
+    while (*(secondString+len) != '\0') len++;
 
     *firststring = malloc(len + 1);
     if (*firststring == NULL) {
